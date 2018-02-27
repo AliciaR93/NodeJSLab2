@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body ng-app="app">
+
+  <ng-view></ng-view>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="config.js"></script>
+  <script src= "components/welcomeComponent.js"></script>
+  <script src="components/taskForm.js"></script>
+  <script src="components/taskList.js"></script>
+  <script src="directives/hoverState.js"></script>
+  <script src="service/form-service.js"></script>
+</body>
+
+</html>

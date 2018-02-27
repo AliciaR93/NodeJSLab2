@@ -1,0 +1,10 @@
+<div>
+  <a href="#!/home">Go back<i class="material-icons">arrow_back</i></a>
+<input class="filteringTodos" type="text" placeholder=" Filter your to-dos" ng-model="todoFilter" />
+<ol class="list">
+  <li hover-state ng-repeat="item in $ctrl.todoList | filter: todoFilter track by $index">{{item}}
+    <i class="material-icons icon1" ng-click="$ctrl.removeItem($index)">close</i></li>
+</ol>
+<input id="todo-list" type="text" placeholder="Add your to-do" ng-model="$ctrl.item" />
+<button class="addButton" type="button" ng-click="$ctrl.addItem($ctrl.item)">Add</button>
+</div>
